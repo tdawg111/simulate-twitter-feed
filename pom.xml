@@ -60,6 +60,16 @@
                             <includeTestSourceDirectory>true</includeTestSourceDirectory>
                         </configuration>
                     </execution>
+                    <execution>
+                        <id>checkstyle</id>
+                        <phase>prepare-package</phase>
+                        <goals>
+                            <goal>checkstyle</goal>
+                        </goals>
+                        <configuration>
+                            <linkXRef>false</linkXRef>
+                        </configuration>
+                    </execution>
                 </executions>
             </plugin>
             <plugin>
